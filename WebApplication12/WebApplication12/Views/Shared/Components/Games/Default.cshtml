@@ -1,0 +1,21 @@
+﻿@model List<WebApplication12.Models.Game>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var game in Model)
+        {
+            <tr>
+                <td>@game.ID</td>
+                <td>@game.Name</td>
+                <td>@game.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
